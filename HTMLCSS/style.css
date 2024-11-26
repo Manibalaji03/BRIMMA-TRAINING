@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(127, 255, 212, 0.338);
+    margin: 2rem auto;
+    padding: 2%;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+    display: block;
+}
+
+input:not([type='checkbox']),
+select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: rgb(200, 8, 8);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type='checkbox'] {
+    accent-color: rgb(202, 5, 103);
+}
+
+#checkboxes {
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+button {
+    background-color: rgb(255, 127, 127);
+    border-radius: 5px;
+    padding: 2%;
+    border: 2px solid;
+}
+
+sup {
+    color: red;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ensure card doesn't exceed the container */
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .Container {
+        width: 95%; /* Adjust container width */
+        max-width: 400px; /* Ensure it doesn't stretch too wide */
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 1.3rem; /* Slightly reduce title font size */
+    }
+
+    .card p {
+        font-size: 0.9rem; /* Reduce paragraph font size for smaller screens */
+    }
+
+    button {
+        padding: 1.5%; /* Reduce button padding for small screens */
+    }
+}

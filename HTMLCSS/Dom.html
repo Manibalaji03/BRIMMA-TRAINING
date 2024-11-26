@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Form</title>
+</head>
+<body>
+    <div class="Container">
+        <form id="studentForm" class="formContainer">
+            <h1>Student Details</h1>
+            <label for="name">Name: <sup>*</sup> </label>
+            <input type="text" id="name" name="username" required>
+
+            <label for="registernumber">Register No: <sup>*</sup></label>
+            <input type="number" id="registernumber" name="regno" required>
+
+            <label for="age">Age: <sup>*</sup></label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="date">DOB: <sup>*</sup></label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="year">Year: <sup>*</sup></label>
+            <select id="year" name="year" required>
+                <option value="1">1st year</option>
+                <option value="2">2nd year</option>
+                <option value="3">3rd year</option>
+                <option value="4">4th year</option>
+            </select>
+
+            <label for="department">Department: <sup>*</sup></label>
+            <select id="department" name="department" required>
+                <option value="ECE">Electronics and Communication Engineering</option>
+                <option value="CSE">Computer Science Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="MECH">Mechanical Engineering</option>
+            </select>
+
+            <fieldset id="checkboxes" aria-required="true">
+                <legend>Hobbies:</legend>
+                <label><input type="checkbox" name="hobbies[]" value="Drawing"> Drawing</label>
+                <label><input type="checkbox" name="hobbies[]" value="Cricket"> Cricket</label>
+                <label><input type="checkbox" name="hobbies[]" value="Chess"> Chess</label>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+
+     
+        <div id="profileCard" class="profileCardContainer"></div>
+    </div>
+
+    <script src="DOM.js"></script>
+</body>
+</html>
