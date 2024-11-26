@@ -1,0 +1,75 @@
+/* Outer container for centering the content */
+.outercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    flex-direction: column;
+}
+
+/* Inner container styling */
+.container {
+   
+    min-width: 400px;
+    min-height: 200px;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 40px 10px black;
+}
+
+/* Input section styling */
+.inputstyle {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Input field styling */
+input[type='text'] {
+    width: 80%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #888;
+    font-size: 1rem;
+}
+
+/* Task items styling */
+#children div {
+    background-color: white;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#children p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Delete button styling */
+#add{
+    background-color: rgb(3, 109, 74);
+}
+
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: darkred;
+}
