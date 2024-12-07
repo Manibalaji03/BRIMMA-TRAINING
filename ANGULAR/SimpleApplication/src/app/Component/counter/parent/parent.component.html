@@ -1,0 +1,6 @@
+<h2>Counter Parent</h2>
+<app-child
+  [count]="counter"
+  (counterChange)="updateCounter($event)"
+></app-child>
+<p>Current Count in Parent: {{ counter }}</p>

@@ -1,0 +1,24 @@
+.loginContainer{
+    padding: 1rem 2rem;
+    width: 400px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.027);
+    border: 1px black inset;
+}
+
+#adminbutton{
+    width: 50%;
+    background-color: rgb(3, 3, 85);
+    border: none;
+    color: white;
+    padding: 1rem 0;
+    border-radius: 1rem 0px 0px 1rem;
+}
+#employeebutton{
+    width: 50%;
+    background-color: rgb(3, 3, 85);
+    border: none;
+    border-radius: 0px 1rem 1rem 0px;
+    color: white;
+    padding: 1rem 0;
+}

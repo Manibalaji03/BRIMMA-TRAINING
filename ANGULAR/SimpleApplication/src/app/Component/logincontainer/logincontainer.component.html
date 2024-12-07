@@ -1,0 +1,14 @@
+<div class="loginContainer">
+    <div id="buttons">
+        <button id="adminbutton" (click)="changeTab(true)">Admin</button>
+        <button id="employeebutton" (click)="changeTab(false)">Employee</button>
+    </div>
+    <div *ngIf=" isAdmin== false ">
+        <app-employeelogin></app-employeelogin>
+    </div>
+    <div *ngIf=" isAdmin== true ">
+        <app-adminlogin></app-adminlogin>
+    </div>
+   
+    
+</div>

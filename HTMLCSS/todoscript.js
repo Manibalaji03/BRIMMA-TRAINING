@@ -43,6 +43,7 @@ function hello(event) {
             // Add event listener to the delete button
             deleteButton.addEventListener('click', function () {
                 childrenContainer.removeChild(taskDiv);
+                alert("Deleted Sucessfully");
             });
         }
     }
